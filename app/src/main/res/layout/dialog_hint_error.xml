@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_white_rectangle"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hint"
+        android:textColor="@color/red_one"
+        android:textSize="@dimen/large_text_size" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/big_margin"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/default_text1"
+        android:textSize="@dimen/standard_text_size" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_button"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/ensure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/micro_text_size" />
+
+</LinearLayout>

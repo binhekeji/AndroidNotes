@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_bar_bg">#ff5555</color>
+    <color name="title_bar_center">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="red_one">#f75555</color>
+    <color name="default_text">#646464</color>
+    <color name="default_text1">#323232</color>
+    <color name="button_false">#f75859</color>
+    <color name="button_true">#e44849</color>
+    <color name="title_serviceItem">#525252</color>
+    <color name="neirong_serviceItem">#7a7a7a</color>
+    <color name="xiaobi">#fd4931</color>
+</resources>
