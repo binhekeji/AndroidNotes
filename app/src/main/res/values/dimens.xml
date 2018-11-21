@@ -1,45 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="title_bar_height">48dp</dimen>
-    <dimen name="title_bar_center">20sp</dimen>
-    <dimen name="title_bar_right">16sp</dimen>
-    <dimen name="default_padding">12dp</dimen>
-    <dimen name="cutting_line">0.5dp</dimen>
 
-    <!--字体大小-->
-    <dimen name="little_text_size">6sp</dimen>
-    <dimen name="small_text_size">8sp</dimen>
-    <dimen name="young_text_size">10sp</dimen>
-    <dimen name="tiny_text_size">12sp</dimen>
-    <dimen name="micro_text_size">14sp</dimen>
-    <dimen name="standard_text_size">16sp</dimen>
-    <dimen name="big_text_size">18sp</dimen>
-    <dimen name="large_text_size">20sp</dimen>
-    <dimen name="great_text_size">22sp</dimen>
-    <dimen name="huge_text_size">24sp</dimen>
-    <dimen name="xhuge_text_size">26sp</dimen>
-    <dimen name="xxhuge_text_size">28sp</dimen>
-    <dimen name="xxxhuge_text_size">30sp</dimen>
 
-    <dimen name="little_margin">6dp</dimen>
-    <dimen name="padding6.5">6.5dp</dimen>
-    <dimen name="margin2">2dp</dimen>
-    <dimen name="margin4">4dp</dimen>
-    <dimen name="small_margin">8dp</dimen>
-    <dimen name="young_margin">10dp</dimen>
-    <dimen name="tiny_margin">12dp</dimen>
-    <dimen name="micro_margin">14dp</dimen>
-    <dimen name="standard_margin">16dp</dimen>
-    <dimen name="centre_margin">18dp</dimen>
-    <dimen name="middle_margin">20dp</dimen>
-    <dimen name="medium_margin">22dp</dimen>
-    <dimen name="big_margin">24dp</dimen>
-    <dimen name="large_margin">26dp</dimen>
-    <dimen name="great_margin">28dp</dimen>
-    <dimen name="huge_margin">30dp</dimen>
-    <dimen name="margin35">35dp</dimen>
-    <dimen name="margin60">60dp</dimen>
-    <dimen name="margin80">80dp</dimen>
-    <dimen name="margin100">100dp</dimen>
-    <dimen name="margin150">150dp</dimen>
 </resources>

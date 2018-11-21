@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">晓链</string>
-    <string name="cancel">取消</string>
-    <string name="ensure">确定</string>
-    <string name="hint">提示</string>
+    <string name="app_name">Android日记</string>
+
     <string name="service">用户服务条款</string>
 
     <string name="trading_particulars">交易详情</string>
+    <string name="basic_knowledge">基础知识</string>
+    <string name="advance">进阶</string>
+    <string name="frame">框架</string>
+    <string name="mine">我的</string>
 </resources>

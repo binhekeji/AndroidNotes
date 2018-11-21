@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar_bg">#ff5555</color>
+    <color name="title_bar_center">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <!--透明-->
+    <color name="transparency">#00ffffff</color>
+    <color name="red_one">#f75555</color>
+    <color name="yellow">#fdd835</color>
+    <color name="default_text">#646464</color>
+    <color name="default_text1">#323232</color>
+    <!--重要文字色-->
+    <color name="importance_words">#3d3d3d</color>
+    <!--辅助文字色-->
+    <color name="auxiliary_words">#adadae</color>
+    <!--分割线-->
+    <color name="divider">#f0f0f0</color>
+    <!--选中-->
+    <color name="select">#fd795b</color>
+    <!--默认-->
+    <color name="normal">#b3b3b3</color>
+    <color name="button_false">#f75859</color>
+    <color name="button_true">#e44849</color>
+    <color name="search_bg">#66ece9ea</color>
+
+    <!--浅粉色-->
+    <color name="light_pink">#feeae1</color>
+    <color name="gray">#8e8e8e</color>
+    <color name="white_login">#fef7f6</color>
+    <color name="others_login">#a3a3a4</color>
+    <color name="like_regist">#131313</color>
+    <color name="shop_number">#eeeeee</color>
+    <color name="gridview_price">#ee8500</color>
+    <color name="shangcheng">#f2f2f2</color>
+    <color name="fengexian">#f0f0f0</color>
+    <color name="denglu">#9ed2f4</color>
+    <color name="beijingCar">#f6f7fb</color>
+    <color name="login">#b3b3b3</color>
+    <color name="registtext">#9b9a9a</color>
+    <color name="getcode">#e85053</color>
+    <color name="getbiGrid">#989898</color>
+    <color name="refund">#67acb7</color>
+    <color name="wallet">#536dfe</color>
+    <color name="chongzhi">#d7e4f2</color>
+    <color name="mineBack">#e9e8ea</color>
+    <color name="part_translucent">#39000000</color>
+    <color name="color_main_gray">#808080</color>
+    <color name="french_gray">#9b9b9b</color>
+</resources>
