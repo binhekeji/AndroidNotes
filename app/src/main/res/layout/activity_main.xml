@@ -21,7 +21,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/cutting_line"
-                android:background="@color/default_text" />
+                android:background="@color/divider" />
 
             <LinearLayout
                 android:layout_width="match_parent"

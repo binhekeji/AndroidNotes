@@ -1,5 +1,6 @@
 package com.cainiao.baselibrary.custom;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -78,6 +79,12 @@ public class MyTitleBar extends LinearLayout {
         more=(TextView)view.findViewById(R.id.more);
         titleBar=(LinearLayout)view.findViewById(R.id.title_bar);
         titleRight=(ImageView)view.findViewById(R.id.menu);
+        titleLeft.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((Activity)context).finish();
+            }
+        });
     }
 
     /**

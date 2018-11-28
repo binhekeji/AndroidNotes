@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="basics_contents">
+        <item>第一章 Android应用和开发环境</item>
+        <item>第二章 Android应用的界面编程</item>
+        <item>第三章 Android的事件处理</item>
+        <item>第四章 Android深入理解Activity和Fragment</item>
+        <item>第五章 Android使用Intent和IntentFilter进行通信</item>
+        <item>第六章 Android应用的资源</item>
+        <item>第七章 Android图形与图像处理</item>
+        <item>第八章 Android数据存储与IO</item>
+        <item>第九章 Android线程和线程池</item>
+        <item>第十章 Android使用ContentProvider实现数据共享</item>
+        <item>第十一章 Android Service与BroadcastReceiver</item>
+        <item>第十二章 Android多媒体应用开发</item>
+        <item>第十三章 Android OpenGL与3D开发</item>
+        <item>第十四章 Android网络应用</item>
+        <item>第十五章 Android管理Android手机桌面</item>
+        <item>第十六章 Android传感器应用开发</item>
+        <item>第十七章 Android GPS应用开发</item>
+        <item>第十八章 Android整合高德Map服务</item>
+        <item>第十九章 Android合金弹头</item>
+        <item>第二十章 Android电子拍卖系统</item>
+    </string-array>
+
+    <string-array name="chapter_eight">
+        <item>使用SharedPreferences</item>
+        <item>File存储</item>
+        <item>SQLite数据库</item>
+        <item>手势(Gesture)</item>
+    </string-array>
+</resources>

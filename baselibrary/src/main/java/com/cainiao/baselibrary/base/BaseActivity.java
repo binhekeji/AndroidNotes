@@ -58,11 +58,11 @@ public abstract class BaseActivity extends FragmentActivity {
         layoutParams=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         setContentView(view);
         ((ViewGroup)view).addView(mTitleBar,0,layoutParams);
-        ButterKnife.bind(this);
+        ButterKnife.bind(this,view);
         initImmersionStatus();//沉浸式状态栏
         initView();
-        initListener();
         initData();
+        initListener();
     }
     /**
      * 添加View布局

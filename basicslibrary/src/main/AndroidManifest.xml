@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cainiao.basicslibrary" />
+    package="com.cainiao.basicslibrary">
+
+    <application>
+        <activity android:name=".chapter_eight.ChapterEightActivity"></activity>
+    </application>
+
+</manifest>

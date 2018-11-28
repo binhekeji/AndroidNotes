@@ -2,6 +2,8 @@ package com.cainiao.androidnotes;
 
 import android.support.v4.app.Fragment;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.cainiao.advancedlibrary.AdvancedFragment;
@@ -60,11 +62,20 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initListener() {
+        ListView listView=new ListView(mContext);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
+            }
+        });
     }
 
     @Override
     protected void initData() {
+        mTitleBar.setTitle(getResources().getString(R.string.basic_knowledge));
+        mTitleBar.setTitleLeftVisibility(View.INVISIBLE);
+        mTitleBar.setTitleRightVisibility(View.INVISIBLE);
         replaceFragment(BASIC_KNOWLEDGE);
     }
 
@@ -78,21 +89,25 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()) {
             //基础知识
             case R.id.basic_knowledge:
+                mTitleBar.setTitle(getResources().getString(R.string.basic_knowledge));
                 replaceFragment(BASIC_KNOWLEDGE);
                 replaceTextAttribute(BASIC_KNOWLEDGE);
                 break;
             //进阶
             case R.id.advance:
+                mTitleBar.setTitle(getResources().getString(R.string.advance));
                 replaceFragment(ADVANCE);
                 replaceTextAttribute(ADVANCE);
                 break;
             //框架
             case R.id.frame:
+                mTitleBar.setTitle(getResources().getString(R.string.frame));
                 replaceFragment(FRAME);
                 replaceTextAttribute(FRAME);
                 break;
             //我的
             case R.id.mine:
+                mTitleBar.setTitle(getResources().getString(R.string.basic_knowledge));
                 replaceFragment(MINE);
                 replaceTextAttribute(MINE);
                 break;

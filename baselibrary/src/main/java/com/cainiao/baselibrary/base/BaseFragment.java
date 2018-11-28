@@ -1,13 +1,14 @@
 package com.cainiao.baselibrary.base;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,9 @@ import com.cainiao.baselibrary.listener.OnErrorHintDialogClickListener;
 import com.cainiao.baselibrary.R;
 import com.cainiao.baselibrary.dialog.LoadingDialog;
 import com.cainiao.baselibrary.utils.DialogUtils;
+
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
@@ -32,16 +36,19 @@ public abstract class BaseFragment extends Fragment {
     protected String TAG = getClass().getName();
     protected Context mContext;
     private LoadingDialog loadingDialog;
-
+    protected View view;
+    private Unbinder unbinder;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mContext=getActivity();
-        View view = addView(inflater, container, savedInstanceState);
+        view = addView(inflater, container, savedInstanceState);
+        //返回一个Unbinder值（进行解绑），注意这里的this不能使用getActivity()
+        unbinder=ButterKnife.bind(this,view);
         initView();
-        initListener();
         initData();
+        initListener();
         return view;
     }
 
@@ -126,8 +133,6 @@ public abstract class BaseFragment extends Fragment {
             } catch (SecurityException e) {
                 e.printStackTrace();
             } catch (NoSuchFieldException e) {
-                e.printStackTrace();
-            } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (java.lang.InstantiationException e) {
                 e.printStackTrace();
@@ -241,5 +246,13 @@ public abstract class BaseFragment extends Fragment {
             e.printStackTrace();
             return "";
         }
+    }
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        //onDestroyView中进行解绑操作
+        unbinder.unbind();
     }
 }

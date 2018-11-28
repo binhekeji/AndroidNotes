@@ -1,0 +1,58 @@
+/**
+ *  全局统一配置文件
+ */
+ext {
+    /**
+     * true 每个业务Module可以单独开发
+     * false 每个业务Module以lib的方式运行
+     * 修改之后需要Sync方可生效
+     */
+    isModule = false
+
+    //版本号
+    versions = [
+            applicationId           : "com.cainiao.androidnotes",        //应用ID
+            versionCode             : 1,                    //版本号
+            versionName             : "1.0.0",              //版本名称
+
+            compileSdkVersion       : 27,
+            buildToolsVersion       : "27.0.3",
+            minSdkVersion           : 15,
+            targetSdkVersion        : 27,
+
+            androidSupportSdkVersion: "27.1.1",
+            constraintLayoutVersion : "1.1.1",
+            junitVersion            : "4.12",
+            runnerVersion           : "1.0.2",
+            espressoVersion         : "3.0.2",
+            annotationsVersion      : "24.0.0",
+
+            butterknifeVersion      : "8.8.1",
+            loggerVersion           : "2.2.0",
+            barlibraryVersion       : "2.2.1",
+            apacheVersion           : "21",
+
+    ]
+    dependencies = [
+            "appcompat_v7"           :"com.android.support:appcompat-v7:${versions["androidSupportSdkVersion"]}",
+            "constraint_layout"      : "com.android.support.constraint:constraint-layout:${versions["constraintLayoutVersion"]}",
+            "junit"                  : "junit:junit:${versions["junitVersion"]}",
+            "runner"                 : "com.android.support.test:runner:${versions["runnerVersion"]}",
+            "espresso_core"          : "com.android.support.test.espresso:espresso-core:${versions["espressoVersion"]}",
+            "support_annotations"    : "com.android.support:support-annotations:${versions["annotationsVersion"]}",
+            "recyclerview-v7"        : "com.android.support:recyclerview-v7:${versions["androidSupportSdkVersion"]}",
+            "support-v4"             : "com.android.support:support-v4:${versions["androidSupportSdkVersion"]}",
+            "apache"                 : "org.apache:apache:${versions["apacheVersion"]}",
+
+            //日志
+            "logger"                 : "com.orhanobut:logger:${versions["loggerVersion"]}",
+
+            //黄油刀
+            "butterknife_compiler"   : "com.jakewharton:butterknife-compiler:${versions["butterknifeVersion"]}",
+            "butterknife"            : "com.jakewharton:butterknife:${versions["butterknifeVersion"]}",
+
+            "barlibrary"             : "com.gyf.barlibrary:barlibrary:${versions["barlibraryVersion"]}",
+
+            ]
+
+}
