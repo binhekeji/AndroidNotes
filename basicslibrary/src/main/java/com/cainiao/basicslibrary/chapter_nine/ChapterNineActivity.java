@@ -1,6 +1,8 @@
-package com.cainiao.basicslibrary.chapter_eight;
+package com.cainiao.basicslibrary.chapter_nine;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,16 +16,17 @@ import com.cainiao.baselibrary.listener.OnItemClickListener;
 import com.cainiao.basicslibrary.ChapterEightAdapter;
 import com.cainiao.basicslibrary.R;
 import com.cainiao.basicslibrary.R2;
+import com.cainiao.basicslibrary.chapter_nine.thread.ThreadActivity;
+import com.cainiao.basicslibrary.chapter_nine.thread_pool.ThreadPoolActivity;
 
 import butterknife.BindView;
 
 /**
  * @author liangtao
- * @date 2018/11/28 15:03
- * @describe 第八章 Android数据存储与IO
+ * @date 2018/12/3 11:30
+ * @describe 第九章 Android线程和线程池
  */
-public class ChapterEightActivity extends BaseActivity implements OnItemClickListener {
-
+public class ChapterNineActivity extends BaseActivity implements OnItemClickListener {
 
     @BindView(R2.id.recyclerView)
     RecyclerView mRecyclerView;
@@ -32,7 +35,7 @@ public class ChapterEightActivity extends BaseActivity implements OnItemClickLis
 
     @Override
     protected View addView() {
-        view=View.inflate(mContext, R.layout.activity_chapter_eight, null);
+        view=View.inflate(mContext, R.layout.activity_chapter_nine, null);
         return view;
     }
 
@@ -49,8 +52,8 @@ public class ChapterEightActivity extends BaseActivity implements OnItemClickLis
     @Override
     protected void initData() {
         mTitleBar.setTitleRightVisibility(View.INVISIBLE);
-        mTitleBar.setTitle(getResources().getStringArray(R.array.basics_contents)[7]);
-        data = getResources().getStringArray(R.array.chapter_eight);
+        mTitleBar.setTitle(getResources().getStringArray(R.array.basics_contents)[8]);
+        data = getResources().getStringArray(R.array.chapter_nine);
         adapter = new ChapterEightAdapter(data);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext);
         //设置为垂直布局，这个是默认的
@@ -75,25 +78,21 @@ public class ChapterEightActivity extends BaseActivity implements OnItemClickLis
         int position = mRecyclerView.getChildAdapterPosition(view);
         Intent intent=new Intent();
         switch (position) {
-            //使用SharedPreferences
+            //线程
             case 0:
-                //showToast(data[position]);
+                intent.setClass(mContext, ThreadActivity.class);
                 break;
-            //File存储
+            //线程池
             case 1:
+                intent.setClass(mContext, ThreadPoolActivity.class);
                 break;
-            //SQLite数据库
-            case 2:
 
-                break;
-            //手势(Gesture)
-            case 3:
-                break;
-             //只有条件不满足的时候才会执行这个方法
+            //只有条件不满足的时候才会执行这个方法
             default:
                 showToast(data[position]);
                 break;
         }
         showToast(data[position]);
+        startActivity(intent);
     }
 }

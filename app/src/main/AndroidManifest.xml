@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cainiao.androidnotes">
 
+
     <application
         android:name="com.cainiao.baselibrary.base.BaseApplication"
         android:allowBackup="true"

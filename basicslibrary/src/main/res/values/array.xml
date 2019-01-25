@@ -29,4 +29,28 @@
         <item>SQLite数据库</item>
         <item>手势(Gesture)</item>
     </string-array>
+
+    <string-array name="chapter_nine">
+        <item>线程</item>
+        <item>AsyncTask</item>
+        <item>HandlerThread</item>
+        <item>IntentService</item>
+        <item>线程池</item>
+    </string-array>
+
+    <string-array name="thread_creation_method">
+        <item>继承Thread类</item>
+        <item>实现Runnable接口</item>
+        <item>实现Callable接口</item>
+        <item>线程的并发和并行</item>
+        <item>线程的同步</item>
+    </string-array>
+
+
+    <string-array name="thread_pool_type">
+        <item>FixedThreadPool</item>
+        <item>CacheThreadPool</item>
+        <item>ScheduledThreadPool</item>
+        <item>SingleThreadExecutor</item>
+    </string-array>
 </resources>

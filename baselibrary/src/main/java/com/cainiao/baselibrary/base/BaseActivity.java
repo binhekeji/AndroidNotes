@@ -92,7 +92,7 @@ public abstract class BaseActivity extends FragmentActivity {
     public void showToast(CharSequence text){
         if (!TextUtils.isEmpty(text)){
             if (toast==null){
-                toast= Toast.makeText(mContext,text, Toast.LENGTH_LONG);
+                toast= Toast.makeText(getApplicationContext(),text, Toast.LENGTH_LONG);
             }else{
                 toast.setText(text);
             }

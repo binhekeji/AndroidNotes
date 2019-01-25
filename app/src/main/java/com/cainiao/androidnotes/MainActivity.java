@@ -62,13 +62,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initListener() {
-        ListView listView=new ListView(mContext);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-            }
-        });
     }
 
     @Override
