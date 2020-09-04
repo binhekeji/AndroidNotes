@@ -1,1 +1,1 @@
-include ':app', ':basicslibrary', ':advancedlibrary', ':framelibrary', ':baselibrary'
+include ':app', ':basicslibrary', ':advancedlibrary', ':framelibrary', ':baselibrary', ':networklibrary'

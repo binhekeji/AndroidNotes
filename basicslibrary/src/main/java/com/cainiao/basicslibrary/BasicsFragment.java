@@ -149,11 +149,13 @@ public class BasicsFragment extends BaseFragment implements OnItemClickListener 
             case 7:
                 showToast(data[position]);
                 intent.setClass(getActivity(),ChapterEightActivity.class);
+                startActivity(intent);
                 break;
             //第九章 Android线程和线程池
             case 8:
                 showToast(data[position]);
                 intent.setClass(getActivity(),ChapterNineActivity.class);
+                startActivity(intent);
                 break;
             //第十章 Android使用ContentProvider实现数据共享
             case 9:
@@ -203,6 +205,6 @@ public class BasicsFragment extends BaseFragment implements OnItemClickListener 
                 showToast(data[position]);
                 break;
         }
-        startActivity(intent);
+//        startActivity(intent);
     }
 }

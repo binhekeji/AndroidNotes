@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidNotes.iml" filepath="$PROJECT_DIR$/AndroidNotes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" filepath="$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basicslibrary/basicslibrary.iml" filepath="$PROJECT_DIR$/basicslibrary/basicslibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/framelibrary/framelibrary.iml" filepath="$PROJECT_DIR$/framelibrary/framelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidNotes.iml" filepath="$PROJECT_DIR$/AndroidNotes.iml" group="AndroidNotes" />
+      <module fileurl="file://$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" filepath="$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" group="AndroidNotes/advancedlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AndroidNotes/app" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" group="AndroidNotes/baselibrary" />
+      <module fileurl="file://$PROJECT_DIR$/basicslibrary/basicslibrary.iml" filepath="$PROJECT_DIR$/basicslibrary/basicslibrary.iml" group="AndroidNotes/basicslibrary" />
+      <module fileurl="file://$PROJECT_DIR$/framelibrary/framelibrary.iml" filepath="$PROJECT_DIR$/framelibrary/framelibrary.iml" group="AndroidNotes/framelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/networklibrary/networklibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/networklibrary/networklibrary.iml" group="AndroidNotes/networklibrary" />
     </modules>
   </component>
 </project>

@@ -56,6 +56,12 @@ public class BaseApplication extends Application {
     public static Context getContext() {
         return instance;
     }
+
+    /**
+     * 通过资源id 获取资源内容
+     * @param resourcesId
+     * @return
+     */
     public static String getStr(int resourcesId) {
         String msg = BaseApplication.getInstance().getResources().getString(resourcesId);
         return msg;

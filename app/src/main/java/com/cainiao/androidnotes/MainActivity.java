@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.cainiao.advancedlibrary.AdvancedFragment;
 import com.cainiao.baselibrary.base.BaseActivity;
 import com.cainiao.basicslibrary.BasicsFragment;
