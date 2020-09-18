@@ -16,17 +16,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
     implementation 'jp.wasabeef:glide-transformations:3.0.1'
     //公共依赖包
     implementation project(':baselibrary')
     //网络包
-    implementation project(':networklibrary')
+//    implementation project(':networklibrary')
     if (!Boolean.valueOf(rootProject.ext.isModule)) {
         implementation project(':advancedlibrary')
         implementation project(':basicslibrary')

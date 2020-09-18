@@ -1,15 +1,15 @@
 package com.cainiao.basicslibrary.chapter_nine;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
+
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cainiao.baselibrary.base.BaseActivity;
 import com.cainiao.baselibrary.listener.OnItemClickListener;
@@ -49,6 +49,7 @@ public class ChapterNineActivity extends BaseActivity implements OnItemClickList
         adapter.setOnItemClickListener(this);
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void initData() {
         mTitleBar.setTitleRightVisibility(View.INVISIBLE);

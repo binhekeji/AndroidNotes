@@ -7,13 +7,13 @@ import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.cainiao.baselibrary.listener.OnErrorHintDialogClickListener;
 import com.cainiao.baselibrary.R;
@@ -124,7 +124,7 @@ public abstract class BaseFragment extends Fragment {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
-            } catch (android.support.v4.app.Fragment.InstantiationException e) {
+            } catch (Fragment.InstantiationException e) {
                 e.printStackTrace();
             } catch (NumberFormatException e) {
                 e.printStackTrace();

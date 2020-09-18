@@ -1,38 +1,29 @@
 package com.cainiao.basicslibrary.chapter_nine.thread_pool;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.test.espresso.core.internal.deps.guava.util.concurrent.ThreadFactoryBuilder;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
+import android.annotation.SuppressLint;
 import android.view.View;
 import android.widget.AdapterView;
+
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.test.espresso.core.internal.deps.guava.util.concurrent.ThreadFactoryBuilder;
 
 import com.cainiao.baselibrary.base.BaseActivity;
 import com.cainiao.baselibrary.listener.OnItemClickListener;
 import com.cainiao.basicslibrary.ChapterEightAdapter;
 import com.cainiao.basicslibrary.R;
 import com.cainiao.basicslibrary.R2;
-import com.cainiao.basicslibrary.chapter_nine.thread.ThreadActivity;
 import com.orhanobut.logger.Logger;
 
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.DelayQueue;
-import java.util.concurrent.Delayed;
-import java.util.concurrent.Executor;
+
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -82,6 +73,7 @@ public class ThreadPoolActivity extends BaseActivity implements OnItemClickListe
         adapter.setOnItemClickListener(this);
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void initData() {
         mTitleBar.setTitleRightVisibility(View.INVISIBLE);

@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidNotes.iml" filepath="$PROJECT_DIR$/AndroidNotes.iml" group="AndroidNotes" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advancedlibrary/AndroidNotes-advancedlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/advancedlibrary/AndroidNotes-advancedlibrary.iml" group="AndroidNotes/advancedlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidNotes-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidNotes-app.iml" group="AndroidNotes/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baselibrary/AndroidNotes-baselibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/baselibrary/AndroidNotes-baselibrary.iml" group="AndroidNotes/baselibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basicslibrary/AndroidNotes-basicslibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/basicslibrary/AndroidNotes-basicslibrary.iml" group="AndroidNotes/basicslibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/framelibrary/AndroidNotes-framelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/framelibrary/AndroidNotes-framelibrary.iml" group="AndroidNotes/framelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/networklibrary/AndroidNotes-networklibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/networklibrary/AndroidNotes-networklibrary.iml" group="AndroidNotes/networklibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidStudioProjects-AndroidNotes.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidStudioProjects-AndroidNotes.iml" group="AndroidNotes" />
       <module fileurl="file://$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" filepath="$PROJECT_DIR$/advancedlibrary/advancedlibrary.iml" group="AndroidNotes/advancedlibrary" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AndroidNotes/app" />
       <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" group="AndroidNotes/baselibrary" />

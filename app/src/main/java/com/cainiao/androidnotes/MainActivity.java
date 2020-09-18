@@ -1,12 +1,12 @@
 package com.cainiao.androidnotes;
 
-import android.support.v4.app.Fragment;
+import android.content.Context;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
 import com.cainiao.advancedlibrary.AdvancedFragment;
 import com.cainiao.baselibrary.base.BaseActivity;
 import com.cainiao.basicslibrary.BasicsFragment;
@@ -20,6 +20,7 @@ import butterknife.OnClick;
  * @date 2018/9/5 11:05
  * @describe 主页面
  */
+@SuppressWarnings("AliDeprecation")
 public class MainActivity extends BaseActivity {
     /**
      * 基础知识
@@ -153,59 +154,59 @@ public class MainActivity extends BaseActivity {
     private void replaceTextAttribute(String main) {
         switch (main) {
             case BASIC_KNOWLEDGE:
-                mBasicKnowledge.setTextColor(getResources().getColor(R.color.select));
-                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.main_true), null, null);
+                mBasicKnowledge.setTextColor(ContextCompat.getColor(this,R.color.select));
+                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.main_true), null, null);
                 mBasicKnowledge.setBackgroundResource(R.drawable.shape_light_pink_rectangle);
-                mAdvance.setTextColor(getResources().getColor(R.color.normal));
-                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.store_false), null, null);
+                mAdvance.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.store_false), null, null);
                 mAdvance.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mFrame.setTextColor(getResources().getColor(R.color.normal));
-                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.consult_false), null, null);
+                mFrame.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.consult_false), null, null);
                 mFrame.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mMine.setTextColor(getResources().getColor(R.color.normal));
-                mMine.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.mine_false), null, null);
+                mMine.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mMine.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.mine_false), null, null);
                 mMine.setBackgroundResource(R.drawable.shape_white_rectangle);
                 break;
             case ADVANCE:
-                mBasicKnowledge.setTextColor(getResources().getColor(R.color.normal));
-                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.main_false), null, null);
+                mBasicKnowledge.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.main_false), null, null);
                 mBasicKnowledge.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mAdvance.setTextColor(getResources().getColor(R.color.select));
-                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.store_true), null, null);
+                mAdvance.setTextColor(ContextCompat.getColor(this,R.color.select));
+                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.store_true), null, null);
                 mAdvance.setBackgroundResource(R.drawable.shape_light_pink_rectangle);
-                mFrame.setTextColor(getResources().getColor(R.color.normal));
-                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.consult_false), null, null);
+                mFrame.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.consult_false), null, null);
                 mFrame.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mMine.setTextColor(getResources().getColor(R.color.normal));
-                mMine.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.mine_false), null, null);
+                mMine.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mMine.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.mine_false), null, null);
                 mMine.setBackgroundResource(R.drawable.shape_white_rectangle);
                 break;
             case FRAME:
-                mBasicKnowledge.setTextColor(getResources().getColor(R.color.normal));
-                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.main_false), null, null);
+                mBasicKnowledge.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.main_false), null, null);
                 mBasicKnowledge.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mAdvance.setTextColor(getResources().getColor(R.color.normal));
-                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.store_false), null, null);
+                mAdvance.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.store_false), null, null);
                 mAdvance.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mFrame.setTextColor(getResources().getColor(R.color.select));
-                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.consult_true), null, null);
+                mFrame.setTextColor(ContextCompat.getColor(this,R.color.select));
+                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.consult_true), null, null);
                 mFrame.setBackgroundResource(R.drawable.shape_light_pink_rectangle);
-                mMine.setTextColor(getResources().getColor(R.color.normal));
-                mMine.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.mine_false), null, null);
+                mMine.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mMine.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.mine_false), null, null);
                 mMine.setBackgroundResource(R.drawable.shape_white_rectangle);
                 break;
             case MINE:
-                mBasicKnowledge.setTextColor(getResources().getColor(R.color.normal));
-                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.main_false), null, null);
+                mBasicKnowledge.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mBasicKnowledge.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.main_false), null, null);
                 mBasicKnowledge.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mAdvance.setTextColor(getResources().getColor(R.color.normal));
-                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.store_false), null, null);
+                mAdvance.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mAdvance.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.store_false), null, null);
                 mAdvance.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mFrame.setTextColor(getResources().getColor(R.color.normal));
-                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.consult_false), null, null);
+                mFrame.setTextColor(ContextCompat.getColor(this,R.color.normal));
+                mFrame.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.consult_false), null, null);
                 mFrame.setBackgroundResource(R.drawable.shape_white_rectangle);
-                mMine.setTextColor(getResources().getColor(R.color.select));
-                mMine.setCompoundDrawablesWithIntrinsicBounds(null, getResources().getDrawable(R.mipmap.mine_true), null, null);
+                mMine.setTextColor(ContextCompat.getColor(this,R.color.select));
+                mMine.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this,R.mipmap.mine_true), null, null);
                 mMine.setBackgroundResource(R.drawable.shape_light_pink_rectangle);
                 break;
             default:

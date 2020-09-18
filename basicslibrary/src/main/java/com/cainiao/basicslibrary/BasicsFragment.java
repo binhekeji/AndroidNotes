@@ -2,21 +2,23 @@ package com.cainiao.basicslibrary;
 
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.OrientationHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cainiao.baselibrary.base.BaseFragment;
 import com.cainiao.baselibrary.listener.OnItemClickListener;
@@ -55,6 +57,7 @@ public class BasicsFragment extends BaseFragment implements OnItemClickListener 
         adapter.setOnItemClickListener(this);
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void initData() {
 
@@ -82,27 +85,20 @@ public class BasicsFragment extends BaseFragment implements OnItemClickListener 
     }
 
     public static String[] MY_PERMISSIONS_STORAGE = {
+            //拍摄照片和录制视频权限
             "android.permission.CAMERA",
             "android.permission.READ_EXTERNAL_STORAGE",
             "android.permission.WRITE_EXTERNAL_STORAGE",
-            "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"};
-
-    public static final int REQUEST_EXTERNAL_STORAGE = 1;
+            //sd卡内创建和删除文件权限
+            "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+    };
 
     /**
      * @Description: Request permission
      * 申请权限
      */
     private void requestPermission() {
-        //检测是否有写的权限
-        //Check if there is write permission
-        int checkCallPhonePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-
-        if (checkCallPhonePermission != PackageManager.PERMISSION_GRANTED) {
-            // 没有写文件的权限，去申请读写文件的权限，系统会弹出权限许可对话框
-            //Without the permission to Write, to apply for the permission to Read and Write, the system will pop up the permission dialog
-            ActivityCompat.requestPermissions(getActivity(), MY_PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
-        } else {
+        if (!PermissionsUtils.checkPermissions(getActivity(),MY_PERMISSIONS_STORAGE)){
             showDialog("权限已经申请过");
         }
     }

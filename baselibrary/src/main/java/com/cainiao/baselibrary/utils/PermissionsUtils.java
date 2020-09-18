@@ -3,8 +3,9 @@ package com.cainiao.baselibrary.utils;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,8 @@ import java.util.List;
  * @describe 6.0动态权限管理帮助类
  */
 public class PermissionsUtils {
+
+    public static final int REQUEST_CODE = 1;
 
 
     /**
@@ -47,7 +50,7 @@ public class PermissionsUtils {
      * 检查是否授权某权限
      */
     private static boolean isHavePermissions(Activity context, String permissions) {
-        return ContextCompat.checkSelfPermission(context, permissions) == PackageManager.PERMISSION_GRANTED;
+        return ContextCompat.checkSelfPermission(context,permissions) == PackageManager.PERMISSION_GRANTED;
     }
 
 
@@ -56,7 +59,7 @@ public class PermissionsUtils {
      */
     private static void applyPermissions(Activity context, List<String> permissions) {
         if (!permissions.isEmpty()) {
-            ActivityCompat.requestPermissions(context, permissions.toArray(new String[permissions.size()]), 1);
+            ActivityCompat.requestPermissions(context, permissions.toArray(new String[permissions.size()]), REQUEST_CODE);
         }
     }
 

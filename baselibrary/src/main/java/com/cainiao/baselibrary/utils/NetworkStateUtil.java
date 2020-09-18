@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
  * 检测手机网络是否可用和当前网络类型
  * @author lishuangxiang
  */
+@SuppressWarnings("ALL")
 public class NetworkStateUtil {
 
     public static final String NO_NETWORK_CONNECTED="当前网络不可用，请检查网络连接再试";
